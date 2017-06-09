@@ -3,6 +3,7 @@
   <head>
     <title>Secret Agent Supply Inc</title>
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/visiborder.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
   </head>
 
@@ -14,8 +15,8 @@
 
     <!-- header section -->
 
-    <header class="container  color--primary">
-    <div class="qc--1 container  container--maxwidth  header--area">
+    <header class="container__flex  color--primary">
+    <div class="container__flex  container--maxwidth  header--area">
         <img class="logo" title="Secret Agent Supply Inc" alt="logo"
           src="./resources/images/logo.png"
         />
@@ -27,9 +28,9 @@
 
     <!-- main banner section -->
 
-    <div id="main-banner" class="main-banner  container">
+    <div id="main-banner" class="main-banner  container__flex">
       <div class="container--maxwidth">
-        <div class="main-banner__text-box  container  color--primary">
+        <div class="main-banner__text-box  container__flex  color--primary">
           <p class="text-box__subtitle  caps--all">
             New Arrival
           </p>
@@ -42,8 +43,8 @@
 
     <!-- menu section -->
 
-    <div class="container  color--secondary">
-      <ul class="container  container--maxwidth  menu-area">
+    <div class="container__flex  color--secondary">
+      <ul class="container__flex  container--maxwidth  menu-area">
         <li class="menu-area__li">
           Eyewear
         </li>
@@ -69,52 +70,70 @@
 
     <!-- products section -->
 
-      <div class="qc--1  container">
-      <div class="container--maxwidth">
-        <div>
-          <img title="Exploding Pen" alt="pen"
-            src="./resources/images/pen.png"
-          />
-          <p>
-            Exploding Pen
-          </p>
-        </div>
-        <div>
-          <img title="Cellular Watch" alt="watch"
-            src="./resources/images/watch.png"
-          />
-          <p>
-            Cellular Watch
-          </p>
-        </div>
-        <div>
-          <img title="Thermal Glasses" alt="glasses"
-            src="./resources/images/glasses.png"
-          />
-          <p>
-            Thermal Glasses
-          </p>
+      <div class="container__flex grid">
+        <div class="container__flex  container--maxwidth  grid--area">
+
+          <div class="container__block  grid__product">
+            <img title="Exploding Pen" alt="pen"
+            class="product__img"
+              src="./resources/images/pen.png"
+            />
+            <p class="product__description color--primary">
+              Exploding Pen
+            </p>
+          </div>
+
+          <div class="container__block  grid__product">
+            <img title="Cellular Watch" alt="watch"
+              class="product__img"
+              src="./resources/images/watch.png"
+            />
+            <p class="product__description color--primary">
+              Cellular Watch
+            </p>
+          </div>
+
+          <div class="container__block  grid__product">
+            <img title="Thermal Glasses" alt="glasses"
+              class="product__img  img--small"
+              src="./resources/images/glasses.png"
+            />
+            <p class="product__description  color--primary">
+              Thermal Glasses
+            </p>
+          </div>
+
         </div>
       </div>
 
-      <!-- locations section -->
+      <div class="container__flex  info">
 
-      <div id="location">
-        <p>
-          Location
-        </p>
-        <p>-47.346436, 84.32354</p>
-      </div>
+        <div class="product__extra container__flex container--maxwidth">
 
-      <!-- hours banner section -->
+          <!-- locations section -->
 
-      <div id="hours">
-        <p>
-          Hours
-        </p>
-        <p>
-          0800 - 1800
-        </p>
+          <div id="location" class="product__extra--item">
+            <p class="extra--item__padding  color--primary">
+              Location
+            </p>
+            <p>
+              -47.346436, 84.32354
+            </p>
+          </div>
+
+          <!-- hours banner section -->
+
+          <div id="hours" class="product__extra--item">
+            <p class="extra--item__padding  color--primary">
+              Hours
+            </p>
+            <p>
+              0800 - 1800
+            </p>
+          </div>
+
+        </div>
+
       </div>
 
       <!-- footer section -->

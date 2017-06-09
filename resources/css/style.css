@@ -14,52 +14,45 @@ html {
   font-family: Helvetica;
 }
 
-.qc--1 {
-  border: 1px solid red;
-}
-
-.qc--2 {
-  border: 1px solid yellow;
-}
-
-img, .qc--3 {
-  border: 1px solid blue;
-}
-
 
 
 
 
 /*----------*\
-#CONTAINERS
+#STRUCTURE-TEMPLATES
 \*----------*/
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+
+.container__block {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.container__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
     .container--maxwidth {
       width: 960px; /* For desktop */
     }
 
-    .color--primary {
-        color: white;
-        background-color: black;
-    }
+.color--primary {
+    color: white;
+    background-color: black;
+}
 
-    .color--secondary {
-        color: white;
-        background-color: firebrick;
-    }
+.color--secondary {
+    color: white;
+    background-color: firebrick;
+}
 
 .caps--all {
   text-transform: uppercase;
 }
-
-
 
 
 
@@ -142,7 +135,61 @@ img, .qc--3 {
 #PRODUCTS-AREA
 \*----------*/
 
+.grid {
+  margin-top: 3rem;
+}
 
+    .grid--area {
+      justify-content: space-around;
+    }
+
+  .grid__product {
+    border: 4px solid black;
+    width: 30%;
+    height: 15rem;
+    background-color: white;
+  }
+
+    .product__img {
+      max-width: 100%;
+      height: 9rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
+        .img--small {
+          height: 5rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+
+    .product__description {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .product__extra {
+      justify-content: space-between;
+
+    }
+
+      .product__extra--item {
+        width: 35%;
+      }
+
+          .extra--item__padding {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 2rem;
+            margin-bottom: 0.25rem;
+          }
+
+.info {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
 
 /*----------*\
 #TABLETS-AND-MOBILE
