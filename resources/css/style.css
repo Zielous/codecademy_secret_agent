@@ -1,0 +1,149 @@
+/**
+* text-transform: capitalize;
+* 4:30PM onwards
+*
+*
+*/
+
+/*----------*\
+#SETUP
+\*----------*/
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.qc--1 {
+  border: 1px solid red;
+}
+
+.qc--2 {
+  border: 1px solid yellow;
+}
+
+img, .qc--3 {
+  border: 1px solid blue;
+}
+
+
+
+
+
+/*----------*\
+#CONTAINERS
+\*----------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+    .container--maxwidth {
+      width: 960px; /* For desktop */
+    }
+
+    .color--primary {
+        color: white;
+        background-color: black;
+    }
+
+    .color--secondary {
+        color: white;
+        background-color: firebrick;
+    }
+
+.caps--all {
+  text-transform: uppercase;
+}
+
+
+
+
+
+/*----------*\
+#HEADER-SECTION
+\*----------*/
+
+.header--area {
+  justify-content: flex-start;
+  margin-top: 0.66rem;
+  margin-bottom: 0.66rem;
+}
+
+.logo {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.company--name {
+}
+
+
+
+
+
+/*----------*\
+#MAIN-BANNER
+\*----------*/
+
+.main-banner {
+  background-image: url("../images/banner-moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+  .main-banner__text-box {
+    width: 25rem;
+    display: block;
+  }
+
+    .text-box__subtitle {
+      padding-top: 2rem;
+      padding-bottom: 0.25rem;
+      padding-left: 2rem;
+      font-weight: bold;
+    }
+
+    .text-box__title {
+      padding-left: 2rem;
+      font-size: 2rem;
+      padding-bottom: 2rem;
+      font-weight: bold;
+    }
+
+
+
+
+
+/*----------*\
+#MENU-AREA
+\*----------*/
+
+.menu-area {
+  justify-content: space-between;
+}
+
+  .menu-area__li {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+
+
+
+
+/*----------*\
+#PRODUCTS-AREA
+\*----------*/
+
+
+
+/*----------*\
+#TABLETS-AND-MOBILE
+\*----------*/
