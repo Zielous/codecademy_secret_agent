@@ -9,18 +9,16 @@
 
 */
 
+/*
+
 html {
   background: repeating-linear-gradient(
   45deg,
   whitesmoke,
   whitesmoke 5px,
   lightgray 5px,
-  lightgray 10px
-);
+  lightgray 10px);
 }
-
-
-/*
 
 div {
   outline: 1px solid red;
@@ -42,8 +40,6 @@ img {
 li {
   outline: 2px dashed yellow;
 }
-
-*/
 
 .vb1 {
   outline: 4px solid aqua;

@@ -115,7 +115,7 @@ html {
 
 
 /*----------*\
-#MENU-AREA
+#MENU-SECTION
 \*----------*/
 
 .menu-area {
@@ -132,7 +132,7 @@ html {
 
 
 /*----------*\
-#PRODUCTS-AREA
+#PRODUCTS-SECTION
 \*----------*/
 
 .grid {
@@ -140,7 +140,7 @@ html {
 }
 
     .grid--area {
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
   .grid__product {
@@ -190,6 +190,26 @@ html {
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
+
+
+
+
+
+/*----------*\
+#FOOTER-SECTION
+\*----------*/
+
+.footer {
+  height: 5rem;
+}
+
+.copyright {
+  justify-content: flex-start;
+}
+
+
+
+
 
 /*----------*\
 #TABLETS-AND-MOBILE
