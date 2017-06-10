@@ -221,8 +221,9 @@ html {
 #RESPONSIVE-MODIFIERS
 \*----------*/
 
-@media only screen and (min-width: 1024px) {
-  /* desktop */
+@media only screen
+  and (min-width: 1024px) {
+  /* desktop and bigger */
 
   .display--desktop {
     display: initial;
@@ -232,10 +233,15 @@ html {
     display: none;
   }
 
+  .display--mobile {
+      display: block;
+    }
+
 }
 
-@media only screen and (max-width: 1024px) {
-  /* tablet & smaller */
+@media only screen
+  and (max-width: 1024px) {
+  /* mobile & bigger */
 
   .container--maxwidth {
     width: 1024px; /* For desktop */
@@ -245,7 +251,7 @@ html {
         display: none;
       }
 
-      .display--mobile {
+      .display--mobileplus {
         display: initial;
       }
 
@@ -255,6 +261,7 @@ html {
       }
 
 
+
   .grid--area {
     /* hide extra products */
     overflow: hidden;
@@ -262,7 +269,6 @@ html {
 
   .grid__product {
     min-width: 47%;
-    min-height: 0px;
     margin-left: 2.5rem;
   }
 
@@ -272,8 +278,85 @@ html {
     }
 
 
+
   .product__extra--item {
     width: 35%;
+  }
+
+  .copyright {
+    margin-left: 3rem;
+  }
+
+}
+
+@media only screen
+  and (max-width: 470px) {
+  /* mobile only */
+
+  .container--maxwidth {
+    width: 100%; /* For mobile */
+  }
+
+
+
+  .main-banner {
+    height: 13rem;
+    padding-bottom: 2rem;
+  }
+
+    .main-banner__text-box {
+      width: 100%;
+      margin-top: 10rem;
+    }
+
+      .text-box__subtitle {
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size: 0.77rem;
+        font-weight: bold;
+      }
+
+      .text-box__title {
+        margin-left: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+
+
+  .grid--area {
+    justify-content: space-around;
+  }
+
+    .grid__product {
+      min-width: 90%;
+      margin-left: 2.5rem;
+    }
+
+    .display--mobile {
+        display: none;
+      }
+
+    .product__extra {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product__extra--item {
+      width: 90%;
+    }
+
+    #location {
+      margin-bottom: 0.5rem;
+    }
+
+
+
+  .copyright {
+    justify-content: center;
+    text-align: center;
+    margin-left: 0;
   }
 
 }
