@@ -1,15 +1,13 @@
 /*
     https://github.com/zielous/visiborder
-    v1.2 | 20170609
+    v1.3 | 20170609
     License: none (public domain)
 
     This style sheet is designed to provide easy visual indicators while building your HTML, complimenting the use of DevTools
 
     Load me AFTER any reset.css but BEFORE any other CSS files
 
-*/
 
-/*
 
 html {
   background: repeating-linear-gradient(
@@ -28,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: 2px dashed orange;
 }
 
-p {
+p, span {
   outline: 2px dashed green;
 }
 
@@ -42,13 +40,15 @@ li {
 }
 
 .vb1 {
-  outline: 4px solid aqua;
+  border: 2px solid aqua;
 }
 
 .vb2 {
-  outline: 4px solid fuchsia;
+  border: 2px solid fuchsia;
 }
 
 .vb3 {
-  outline: 4px solid blue;
+  border: 2px solid blue;
 }
+
+*/
